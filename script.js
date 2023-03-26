@@ -34,11 +34,15 @@ function drawHangman() {
 	} else if (incorrectGuesses === 5) {
 		hangmanSvg.innerHTML += '<circle cx="120" cy="50" r="20"></circle>';
     } else if (incorrectGuesses === 6) {
-    hangmanSvg.innerHTML += '<line x1="120" y1="70" x2="120" y2="130"></line>';
-    hangmanSvg.innerHTML += '<line x1="120" y1="80" x2="90" y2="100"></line>';
-    hangmanSvg.innerHTML += '<line x1="120" y1="80" x2="150" y2="100"></line>';
-    hangmanSvg.innerHTML += '<line x1="120" y1="130" x2="90" y2="170"></line>';
-    hangmanSvg.innerHTML += '<line x1="120" y1="130" x2="150" y2="170"></line>';
+        hangmanSvg.innerHTML += '<line x1="120" y1="70" x2="120" y2="130"></line>';
+    } else if (incorrectGuesses === 7) {
+        hangmanSvg.innerHTML += '<line x1="120" y1="80" x2="90" y2="100"></line>';
+    } else if (incorrectGuesses === 8) {
+        hangmanSvg.innerHTML += '<line x1="120" y1="80" x2="150" y2="100"></line>';
+    } else if (incorrectGuesses === 9) {
+        hangmanSvg.innerHTML += '<line x1="120" y1="130" x2="90" y2="170"></line>';
+    } else if (incorrectGuesses === 10) {
+        hangmanSvg.innerHTML += '<line x1="120" y1="130" x2="150" y2="170"></line>';
     }
     }
     
@@ -57,7 +61,7 @@ function drawHangman() {
     } else {
     incorrectGuesses++;
     drawHangman();
-    if (incorrectGuesses === 6) {
+    if (incorrectGuesses === 10) {
     alert('Sorry, you lost. The word was "' + word + '".');
     }
     }
@@ -75,4 +79,5 @@ function drawHangman() {
           }
         }
       });
+      
       
