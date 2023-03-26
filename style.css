@@ -1,0 +1,41 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 20px;
+}
+
+#game-board {
+	background-color: #eee;
+	border: 1px solid #ccc;
+	margin-right: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+#hangman {
+	margin-right: 20px;
+}
+
+#guessed-letters {
+	margin-top: 20px;
+}
+
+#hangman-svg line, #hangman-svg circle {
+	fill: none;
+	stroke: #333;
+	stroke-width: 5px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
